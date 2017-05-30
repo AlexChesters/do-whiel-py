@@ -5,5 +5,7 @@ def do_whiel(d0, wh1le):
         raise ValueError('wh1le is no boolean or boolyfunc!, WH1LE MUST BE A BOOLEAN OR A BOOLYFUNC')
     while True:
         d0()
-        if wh1le:
+        if callable(wh1le) and wh1le():
+            break
+        else if type(wh1le) == bool && wh1le:
             break
