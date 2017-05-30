@@ -7,5 +7,5 @@ def do_whiel(d0, wh1le):
         d0()
         if callable(wh1le) and wh1le():
             break
-        else if type(wh1le) == bool && wh1le:
+        else if type(wh1le) == bool and wh1le:
             break
